@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+
+<!-- Website/Template Language -->
+<html lang = "en">
+
+
+    <head>
+        <meta charset = "utf-8">
+
+        <!-- Description, important for SEO -->
+        <meta name = "description" content = "We work the best job for our city and local community.">
+
+        <!-- Keywords -->
+        <meta name = "keywords" content = "City, Local, Community, News, Water, Electricity, Departments, Council">
+
+        <!-- Suiting for different device sizes -->
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <link rel = "icon" type = "image/png" href = "Images/Title/Title.png">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-grid.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-grid.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-reboot.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-reboot.min.css">
+        <link rel = "stylesheet" href = "SCSS_CSS/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+        <title>
+            Communis - Local Community for Digital Age
+        </title>
+
+
+<!-- 
+        
+******************        
+COPYRIGHT, SOURCES
+****************** 
+
+About, NYC Image - https://unsplash.com/photos/NjbsEkkvOwc (Joshua Newton)
+Back to Previous Screen - https://www.w3schools.com/js/tryit.asp?filename=tryjs_history_back
+Bottom Border, Different Color - https://stackoverflow.com/questions/38137476/how-to-create-border-bottom-with-2-different-color (Mohammad Usman)
+Box Shadow - https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow
+City Parliament, Image - https://unsplash.com/photos/gdjV5AushuI (Aaliya Vahab)	
+Code Mistakes - Visual Studio Code
+Color Wheel - https://www.sessions.edu/color-calculator/	
+Color Wheel - 	https://www.canva.com/colors/color-wheel/				
+Crop Images - https://imageresizer.com/
+Create Responsive Background Image - https://stackoverflow.com/questions/12609110/responsive-css-background-images (Pnsadeghy)
+Default Height - https://www.w3schools.com/cssref/pr_dim_height.asp
+Departments, Image - https://unsplash.com/photos/pU2VRZ63EKc (Paulo Silva)
+Departments, Image - https://unsplash.com/photos/_6rmAEDLtiQ (Slidebean)
+Display None, Important - https://stackoverflow.com/questions/15855826/css-alternatives-to-style-displaynone (Kyle Ronsberg)	
+Events, Airport - https://unsplash.com/photos/H1pa1-naHu8 (LOGAN WEAVER)
+Events, Image - https://unsplash.com/photos/RSYBi_1fhfM (Ken Yam)
+Events, Museum Image - https://unsplash.com/photos/9HFqrPg9VbQ (Jouwen Wang)
+Events, Times Square, Image - https://unsplash.com/photos/a94IcGkbRws (Geoff Brooks)
+Facebook, New York - FB, NYC Page
+Google Fonts - Google Fonts
+Google Translate - Translation Help
+Greyscale Problem, Illustrator - https://www.bittbox.com/illustrator/illustrator-101-the-annoying-grayscale-color-problem	
+Hamburger Menu - https://www.youtube.com/watch?v=BN6fH1nRDxA	
+Home, Background - https://unsplash.com/photos/4-KoYT9inCI (Matt Lamers)
+Home, Search Functionality - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_list
+Icons - Material Design
+Instagram, NYC Pages - https://www.instagram.com/nycgov/
+jQuery, Hide and Show - https://www.w3schools.com/jquery/jquery_hide_show.asp
+jQuery, on Click Property - https://www.w3schools.com/jquery/event_click.asp
+jQuery, Scroll Down - https://stackoverflow.com/questions/12650170/how-to-scroll-down-jquery  (Isuru Dinusha)
+jQuery Variables - https://www.codecademy.com/forum_questions/55f7ab09e39efebda1000470	
+La Guardia Airport, Address - https://www.laguardia-airport.com/
+Leaflat Maps - https://leafletjs.com/examples/quick-start/	
+Life in the Big Apple - https://realestate.usnews.com/places/new-york/new-york-city	
+Line Height - https://www.w3schools.com/cssref/pr_dim_line-height.asp
+Link, jQuery - https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage  (Boris Guéry)	
+Loader - https://dev.to/devmount/learn-css-animation-by-creating-pure-css-loaders-3lm6
+Load Map Tiles - https://stackoverflow.com/questions/36037178/leaflet-loads-incomplete-map  (HamidReza)
+Major, Image - https://unsplash.com/photos/VtSYNaszd5Y (Roland Samuel)
+Map Token - Mapbox
+Metropolitan Museum, Address - https://www.metmuseum.org/
+News, Image, Manhattan - https://unsplash.com/photos/5omwAMDxmkU (Michael Discenza)
+News, Image on the Right - https://unsplash.com/photos/vjwkQsqatCM (Anthony DELANOIX)
+News, Image, Statue - https://unsplash.com/photos/spP5WTH7U8Q (Rehan Syed)
+News, Image, Times Square - https://unsplash.com/photos/XWl8Pu3HrgY (Aaron Sebastian)
+News, Right Side, Image - https://unsplash.com/photos/vjwkQsqatCM (Anthony DELANOIX)
+New York City Council, Info - https://www.linkedin.com/company/new-york-city-council
+New York, Phone Codes - http://dialcode.org/North_America/United_States/New_York/
+New York, Time Zone - https://www.timeanddate.com/worldclock/usa/new-york
+NYC, Basic Information - https://www.nycgo.com/plan-your-trip/basic-information/	
+NY, City Hall - https://www.nycgo.com/attractions/city-hall/
+NY, City Hall, Coordinates - https://www.latlong.net/place/new-york-city-hall-ny-usa-5431.html
+NYC, Img, Footer - https://unsplash.com/photos/TaCk3NspYe0  (Luca Bravo)
+NYC, Img, Footer - https://unsplash.com/photos/6NmnrAJPq7M  (Thomas Habr)	
+NYC, Img, Footer - https://unsplash.com/photos/YihQdPSK9jI  (Aaron Burson)
+NYC, Img, Footer - https://unsplash.com/photos/wpU4veNGnHg  (ben o'bro)
+NYC, Img, Footer - https://unsplash.com/photos/y9WmMWaiftc  (Pedro Lastra)	
+NYC, Img, Footer - https://unsplash.com/photos/c1OVi149Y2Y  (Pedro Lastra)	
+Offices, Image - https://unsplash.com/photos/c3tNiAb098I (nrd)	
+Privacy Policy - https://www.termsfeed.com/blog/wp-content/uploads/2019/04/privacy-policy-template.pdf	
+SCSS Modules - https://sass-lang.com/guide
+Search Form - https://mdbootstrap.com/docs/jquery/forms/search/
+Search and Highlight Text - http://jsfiddle.net/x8rpY/1/
+Services, Documents, Image - https://unsplash.com/photos/GJao3ZTX9gU (Cytonn Photography)
+Services, Land, Image - https://unsplash.com/photos/NSmXGfpXQ6o (Martin Reisch)
+Services, NY, Image - https://unsplash.com/photos/FA8HEWO9Vd8 (Luke Stackpoole)	
+Services, Permissions, Image - https://unsplash.com/photos/eELCRf8nwsI (iMattSmart)
+Shadows - https://css-tricks.com/snippets/css/css-box-shadow/
+Signature Generator - https://www.mylivesignature.com/create-signature-step1
+Take Fonts From Webpages - https://fount.artequalswork.com/	
+Terms - https://www.pandadoc.com/website-standard-terms-and-conditions-template/
+Terms - https://www.contractology.com/free-website-terms-and-conditions.html	
+Terms - https://termly.io/resources/templates/terms-and-conditions-template/	
+Terms - https://termsandcondiitionssample.com/
+Times Square Address - https://www.nycgo.com/attractions/times-square/
+Twitter Logo - https://www.freepik.com/free-icon/twitter-black-shape_744435.htm#page=1&query=Twitter&position=0  (Flaticon), Dave Gandy
+Twitter Page, NYC - https://twitter.com/nycgov
+US Phone Code - https://www.rebtel.com/en/international-calling-guide/phone-codes/us/
+
+
+*****************
+TABLE OF CONTENTS
+*****************
+
+1. Loader
+2. Home  
+ 2.1 Social Icons 
+  2.2 Visit Us Area 
+  2.3 Search Area 
+  2.4 NY Gov Logo 
+  2.5 Hamburger Menu 
+  2.6 Navbar
+  2.7 Language 
+  2.8 NY, Future Text 
+  2.9 Invest, Text 
+  2.10 Button, Learn More
+3. About 
+ 3.1 Residents 
+ 3.2 Events 
+ 3.3 Services 
+ 3.4 Careers 
+ 3.5 Heading and Number
+ 3.6 NYC Image with Text 
+ 3.7 Right Area, Text
+4. Government
+ 4.1 Heading and Number 
+ 4.2 Major 
+ 4.3 City Council 
+ 4.4 Offices 
+5. Departments 
+ 5.1 Heading and Number 
+ 5.2 Text Area 
+ 5.3 Images 
+6. News 
+ 6.1 Heading and Number 
+ 6.2 Manhattan, Img 
+ 6.3 Manhattan, News 
+ 6.4 Statue of Liberty, Img 
+ 6.5 Statue of Liberty, News 
+ 6.6 Times Square, Img 
+ 6.7 Times Square, News 
+ 6.8 Image on the Right, NY 
+ 6.9 Navbar 
+7. Contact 
+ 7.1 Heading and Number 
+ 7.2 Make a Call Area 
+ 7.3 Visit Area 
+ 7.4 Mail Area 
+ 7.5 Contact Form 
+8. Footer 
+ 8.1 Logo and Text 
+ 8.2 Info Contacts 
+ 8.3 Instagram Images 
+ 8.4 Bottom 
+9. JavaScript Connections
+
+-->
+    </head>
+
+
+    <!-- BODY -->
+    <body>
+
+
+        <!-- LOADER -->
+        <section class = "loader">
+            <h1 class = "d-none">
+                Validation
+            </h1>
+            <div class = "d-flex justify-content-center align-items-center h-100">
+                <div class = "content">
+                </div>
+            </div>
+        </section>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- HOME -->
+            <section class = "home" id = "home_anchor">
+                <div class = "d-flex justify-content-center">
+                    <div class = "d-flex justify-content-center m-0 p-0 content">
+                        <div class = "w-100 d-flex justify-content-center">
+                            <div class = "row m-0 p-0 holder">
+                                <div class = "col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 m-0 p-0 d-flex justify-content-center justify-content-xl-start align-items-center soc">
+
+                                    <!-- Social Icons -->
+                                    <div class = "social_area">
+                                        <a href = "https://www.facebook.com/nycgo/">
+                                            <img class = "img-fluid social fb" src = "Images/Home/Facebook.png" alt = "Facebook">
+                                        </a>
+                                        <a href = "https://twitter.com/nycgov">
+                                            <img class = "img-fluid social twitter" src = "Images/Home/Twitter.png" alt = "Twitter">
+                                        </a>
+                                        <a href = "https://www.linkedin.com/company/city-of-new-york">
+                                            <img class = "img-fluid social linkedin" src = "Images/Home/Linkedin.png" alt = "Linkedin">
+                                        </a>
+                                        <a href = "https://www.instagram.com/nycgov/">
+                                            <img class = "img-fluid social instagram" src = "Images/Home/Instagram.png" alt = "Instagram">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Visit Us Area -->
+                                <div class = "col-xl-4 m-0 p-0 time">
+                                    <div class = "visit_us">
+                                        <p id = "visit_us" class = "visit">
+                                            Visit Us
+                                        </p>
+                                        <p>
+                                            Mon - Fri
+                                        </p>
+                                        <p>
+                                            09:00 - 17:00 EDT
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Search Area -->
+                                <div class = "col-xl-4 col-lg-12 col-md-12 m-0 p-0 d-flex justify-content-xl-end justify-content-center align-items-center search">
+                                    <div class = "search_holder">
+                                        <img class = "img-fluid searchImg" src = "Images/Home/Search.png" alt = "Search">
+                                    </div>
+                                    <div class = "close_button">
+                                        <img class = "img-fluid close" src = "Images/Home/Close.png" alt = "Close">
+                                    </div>
+                                    <div class = "form">
+                                        <form class = "form-inline d-flex justify-content-center md-form form-sm mt-0">
+                                            <input class = "form-control form-control-sm ml-3 w-75 sear" type = "text" placeholder = "Search"
+                                            aria-label = "Search" id = "searchfor">
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!-- NY Gov Logo -->
+                                <div class = "col-xl-4 m-0 p-0 gov">
+                                    <a href = "#home_anchor" class = "gov_link">
+                                        <h2 class = "logo">
+                                            NY.Gov
+                                        </h2>
+                                    </a>
+                                </div>
+
+                                <!-- Hamburger Menu -->
+                                <div class = "home_hamburger">
+                                    <div class = "home_line home_lineTop">
+                                    </div>
+                                    <div class = "home_line home_lineMiddle">
+                                    </div>
+                                    <div class = "home_line home_lineBottom">
+                                    </div>
+                                </div>
+
+                                <!-- Navbar -->
+                                <div class = "col-xl-4 mr-0 mb-0 ml-0 p-0 d-flex justify-content-center navbar">
+                                    <ul class = "navbar_list">
+                                        <li>
+                                            <h4>
+                                                <a href = "#" class = "home_click ho">
+                                                    Home
+                                                </a>
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <a href = "#" class = "navbar_about home_click">
+                                                    About
+                                                </a>
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <a href = "#" class = "navbar_government home_click">
+                                                    Government
+                                                </a>
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <a href = "#" class = "navbar_departments home_click">
+                                                    Departments
+                                                </a>
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <a href = "#" class = "navbar_news home_click">
+                                                    News
+                                                </a>
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <a href = "#" class = "navbar_contact home_click">
+                                                    Contact
+                                                </a>
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Language -->
+                                <div class = "col-xl-4 col-lg-12 col-sm-12 col-12 m-0 p-0 d-flex justify-content-xl-end justify-content-center align-items-center language">
+                                    <h4 class = "lang">
+                                        <a href = "#">
+                                            De
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <!-- NY Future Text -->
+                                <div class = "col-xl-12 m-0 p-0 future">
+                                    <div class = "ny">
+                                        <h1 class = "digital">
+                                            NY Future is Digital
+                                        </h1>
+                                    </div>
+                                </div>
+
+                                <!-- Invest, Text -->
+                                <div class = "col-xl-12 m-0 p-0 invest">
+                                    <div class = "digital">
+                                        <h2 class = "technologies">
+                                            We invest in digital technologies and smart city concept.
+                                        </h2>
+                                    </div>
+                                </div>
+
+                                <!-- Button, Learn More -->
+                                <div class = "col-xl-12 m-0 p-0 button">
+                                    <h4 class = "button_area">
+                                        <a href = "#" class = "learn">
+                                            Learn More
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- ABOUT -->
+            <section class = "about" id = "about_anchor">
+                <div class = "row m-0 p-0 content">
+
+                    <!-- Residents -->
+                    <div class = "col-xl-3 col-md-12 m-0 p-0 d-flex justify-content-center residents">
+                        <div class = "m-0 p-0 info">
+                            <a href = "HTML/residents.html" class = "link">
+                                <div class = "info_block">
+                                    <div class = "d-flex justify-content-center">
+                                        <img class = "img-fluid m-0 p-0 residents_icon" src = "Images/About/Residents.png" alt = "Residents">
+                                    </div>
+                                    <h4 class = "mr-0 mb-0 ml-0 p-0 text-center residents_text">
+                                        Residents
+                                    </h4>
+                                    <p class = "mr-0 mb-0 ml-0 p-0 text-center help">
+                                        Help for our Residents
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Events -->
+                    <div class = "col-xl-3 mr-0 mb-0 ml-0 p-0 d-flex justify-content-center events">
+                        <div class = "m-0 p-0 info">
+                            <a href = "HTML/events.html" class = "link">
+                                <div class = "info_block">
+                                    <div class = "d-flex justify-content-center">
+                                        <img class = "img-fluid m-0 p-0 events_icon" src = "Images/About/Events.png" alt = "Events">
+                                    </div>
+                                    <h4 class = "mr-0 mb-0 ml-0 p-0 text-center events_text">
+                                        Events
+                                    </h4>
+                                    <p class = "mr-0 mb-0 ml-0 p-0 text-center apple">
+                                        Events in the Big Apple
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Services -->
+                    <div class = "col-xl-3 mr-0 mb-0 ml-0 p-0 d-flex justify-content-center services">
+                        <div class = "m-0 p-0 info">
+                            <a href = "HTML/services.html" class = "link">
+                                <div class = "info_block">
+                                    <div class = "d-flex justify-content-center">
+                                        <img class = "img-fluid m-0 p-0 services_icon" src = "Images/About/Services.png" alt = "Services">
+                                    </div>
+                                    <h4 class = "mr-0 mb-0 ml-0 p-0 text-center services_text">
+                                        Services
+                                    </h4>
+                                    <p class = "mr-0 mb-0 ml-0 p-0 text-center serv">
+                                        Our Services
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Careers -->
+                    <div class = "col-xl-3 mr-0 mb-0 ml-0 p-0 d-flex justify-content-center careers">
+                        <div class = "m-0 p-0 info">
+                            <a href = "HTML/careers.html" class = "link">
+                                <div class = "info_block">
+                                    <div class = "d-flex justify-content-center">
+                                        <img class = "img-fluid m-0 p-0 careers_icon" src = "Images/About/Careers.png" alt = "Careers">
+                                    </div>
+                                    <h4 class = "mr-0 mb-0 ml-0 p-0 text-center careers_text">
+                                        Careers
+                                    </h4>
+                                    <p class = "mr-0 mb-0 ml-0 p-0 text-center positions">
+                                        Open Job Positions
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Heading and Number -->
+                    <div class = "col-xl-12 m-0 p-0 d-flex justify-content-xl-start justify-content-md-center heading">
+                        <div class = "mr-0 mb-0 ml-0 p-0 ab">
+                            <h1 class = "number">
+                                01
+                            </h1>
+                            <h1 class = "hea">
+                                About
+                            </h1>
+                        </div>
+                    </div>
+
+                    <!-- NYC Image with Text -->
+                    <div class = "col-xl-6 col-md-12 mr-0 mb-0 ml-0 p-0 img">
+                        <div class = "mt-0 mr-0 mb-0 p-0 ny">
+                            <div class = "img_hold">
+                                <img class = "img-fluid mt-0 mr-0 ml-0 p-0 ny_img" src = "Images/About/NY_City.png" alt = "New York">
+                            </div>
+                            <div class = "m-0 p-0 nyc">
+                                <h1 class = "m-0 p-0 ny_text">
+                                    NEW YORK CITY
+                                </h1>
+                            </div>
+                            <div class = "m-0 p-0 life">
+                                <h2 class = "text-center big_apple">
+                                    Life in Big Apple
+                                </h2>
+                                <p class = "mr-0 mb-0 ml-0 p-0 lifestyle">
+                                    New York City is known for its fast-paced, around-the-clock lifestyle, which may be overwhelming for newcomers. Known as "the city that never sleeps," this relentless metropolis draws those seeking to advance their careers and push their limits. People come to New York City to pursue their dreams, achieve a better life and test the adage "if you can make it here, you can make it anywhere."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Area, Text -->
+                    <div class = "col-xl-6 col-md-12 col-sm-12 col-12 mr-0 ml-0 p-0 d-flex justify-content-center right">
+                        <div class = "d-flex align-items-center justify-content-center">
+                            <div class = "m-0 p-0 d-flex align-items-center justify-content-center boroughs">
+                                <h2 class = "text-center text">
+                                    New York City is composed of five boroughs. While Manhattan and Staten Island are islands, Brooklyn and Queens are geographically part of Long Island, and the Bronx is attached to the US mainland. The islands are linked by bridges, tunnels and ferries. 
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- GOVERNMENT -->
+            <section class = "government" id = "government_anchor">
+                <div class = "row m-0 p-0 content">
+
+                    <!-- Heading and Number -->
+                    <div class = "col-md-12 m-0 p-0 d-flex justify-content-xl-start justify-content-md-center heading">
+                        <div class = "mr-0 mb-0 ml-0 p-0 govern">
+                            <h1 class = "number">
+                                02
+                            </h1>
+                            <h1 class = "hea">
+                                Government
+                            </h1>
+                        </div>
+                    </div>
+
+                    <!-- Major -->
+                    <div class = "col-xl-4 m-0 p-0 major">
+                        <div class = "major_img">
+                            <img class = "img-fluid img" src = "Images/Government/Major.png" alt = "Major">
+                            <div class = "m-0 p-0 layer">
+                                <h2 class = "info">
+                                    Major
+                                </h2>
+                                <a href = "HTML/major.html">
+                                    <img class = "img-fluid arrow" src = "Images/Government/Arrow_Material.png" alt = "Arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- City Council -->
+                    <div class = "col-xl-4 m-0 p-0 council">
+                        <div class = "council_img">
+                            <img class = "img-fluid img" src = "Images/Government/City_Parliament.png" alt = "Council">
+                            <div class = "m-0 p-0 layer">
+                                <h2 class = "info">
+                                    City Council
+                                </h2>
+                                <a href = "HTML/council.html">
+                                    <img class = "img-fluid arrow" src = "Images/Government/Arrow_Material.png" alt = "Arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Offices -->
+                    <div class = "col-xl-4 m-0 p-0 offices">
+                        <div class = "offices_img">
+                            <img class = "img-fluid img" src = "Images/Government/Offices.png" alt = "Offices">
+                            <div class = "m-0 p-0 layer">
+                                <h2 class = "info">
+                                    Offices
+                                </h2>
+                                <a href = "#">
+                                    <img class = "img-fluid arrow" src = "Images/Government/Arrow_Material.png" alt = "Arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- DEPARTMENTS -->
+            <section class = "departments" id = "departments_anchor">
+                <div class = "row m-0 p-0 content">
+                    <div class = "col-xl-12 m-0 p-0 d-flex justify-content-xl-start justify-content-md-center heading">
+
+                        <!-- Heading and Number -->
+                        <div class = "mr-0 mb-0 ml-0 p-0 departments_heading">
+                            <h1 class = "number">
+                                03
+                            </h1>
+                            <h1 class = "hea">
+                                Departments
+                            </h1>
+                        </div>
+                    </div>
+
+                    <!-- Text Area -->
+                    <div class = "col-xl-6 m-0 p-0 deps">
+                        <div class = "ny">
+                            <div>
+                                <h1 class = "ny_departments">
+                                    NY Departments
+                                </h1>
+                                <div class = "mr-0 mb-0 p-0 line">
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "m-0 p-0 offices">
+                            <h2 class = "text">
+                                Visit our Offices
+                            </h2>
+                        </div>
+                        <div class = "m-0 p-0 adm_holder">
+                            <h5 class = "mr-0 mb-0 p-0 administration">
+                                New York City is administered by a mayor who chooses department heads and criminal-court justices and prepares the annual budget. Mayors hold considerable power but are constantly involved in legislative battles with the 51 members of the City Council. Both mayor and council members serve a maximum of three four-year terms. In general, beginning with Fiorello La Guardia in the 1930s, the mayors usually have led their own parties and have been stronger than other party leaders.
+                            </h5>
+                        </div>
+                        <div class = "d-flex justify-content-xl-start justify-content-center">
+                            <div>
+                                <div class = "mr-0 mb-0 ml-0 p-0 departments_button">
+                                    <h2 class = "mr-0 mb-0 p-0 deps_button">
+                                        Departments
+                                    </h2>
+                                </div>
+                                <div>
+                                    <a href = "#">
+                                        <img class = "img-fluid arrow" src = "Images/Departments/Arrow_Material.png" alt = "Arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Images -->
+                    <div class = "col-xl-6 col-lg-12 m-0 p-0 d-flex justify-content-xl-end justify-content-center departments_right">
+                        <div>
+                            <div class = "m-0 p-0 departments_ny">
+                                <img class = "img-fluid mb-0 ml-0 pt-0 pr-0 pl-0 ny_img" src = "Images/Departments/NY.png" alt = "NY">
+                                <div class = "m-0 p-0">
+                                    <img class = "img-fluid m-0 p-0 department_img" src = "Images/Departments/Department.png" alt = "Department">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- NEWS -->
+            <section class = "news" id = "news_anchor">
+                <div class = "row m-0 p-0 content">
+                    <div class = "col-xl-12 m-0 p-0 d-flex justify-content-xl-start justify-content-center heading">
+
+                        <!-- Heading and Number -->
+                        <div class = "mr-0 mb-0 ml-0 p-0 news_heading">
+                            <h1 class = "number">
+                                04
+                            </h1>
+                            <h1 class = "hea">
+                                News
+                            </h1>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 col-lg-12 mr-0 mb-0 ml-0 p-0 row info_block">
+
+                        <!-- Manhattan Img -->
+                        <div class = "col-xl-6 col-lg-12 mt-0 mr-0 mb-0 p-0 d-flex justify-content-xl-start justify-content-center holder_img">
+                            <img class = "img-fluid mt-0 mr-0 mb-0 p-0 img" src = "Images/News/Manhattan.png" alt = "Manhattan">
+                        </div>
+
+                        <!-- Manhattan News -->
+                        <div class = "col-xl-6 col-lg-12 m-0 p-0 d-flex align-items-center justify-content-xl-start justify-content-center info">
+                            <div class = "m-0 p-0">
+                                <h2 class = "mr-0 mb-0 heading">
+                                    Traffic Regulations on Manhattan
+                                </h2>
+                                <h4 class = "august">
+                                    AUGUST 2020 | MANHATTAN | RICK MOSEY
+                                </h4>
+                                <p class = "text">
+                                    Recently, there are adopted new rules for traffic on Manhattan.
+                                </p>
+                                <div class = "d-flex justify-content-xl-start justify-content-center">
+                                    <div>
+                                        <h2 class = "read">
+                                            Read More
+                                        </h2>
+                                        <a href = "#">
+                                            <img class = "img-fluid arrow" src = "Images/News/Arrow_Material.png" alt = "Arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Statue of Liberty, Img -->
+                        <div class = "col-xl-6 col-lg-12 mt-0 mr-0 mb-0 p-0 d-flex justify-content-xl-start justify-content-center holder_img">
+                            <img class = "img-fluid mr-0 mb-0 p-0 img" src = "Images/News/Statue.png" alt = "Statue">
+                        </div>
+
+                        <!-- Statue of Liberty News -->
+                        <div class = "col-xl-6 col-lg-12 mt-0 mb-0 mr-0 p-0 d-flex align-items-center justify-content-xl-start justify-content-center info">
+                            <div class = "m-0 p-0">
+                                <h2 class = "heading heading_margin">
+                                    Statue of Liberty, Reconstruction
+                                </h2>
+                                <h4 class = "august">
+                                    AUGUST 2020 | STATUE OF LIBERTY | UNA MCKEY
+                                </h4>
+                                <p class = "text">
+                                    Next month, is supposed to start with reconstruction ...
+                                </p>
+                                <div class = "d-flex justify-content-xl-start justify-content-center">
+                                    <div>
+                                        <h2 class = "read">
+                                            Read More
+                                        </h2>
+                                        <a href = "#">
+                                            <img class = "img-fluid arrow" src = "Images/News/Arrow_Material.png" alt = "Arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Times Square Image -->
+                        <div class = "col-xl-6 col-lg-12 mt-0 mr-0 mb-0 p-0 d-flex justify-content-xl-start justify-content-center holder_img">
+                            <img class = "img-fluid mr-0 p-0 img" src = "Images/News/Times_Square.png" alt = "Square">
+                        </div>
+
+                        <!-- Times Square News -->
+                        <div class = "col-xl-6 col-lg-12 m-0 p-0 d-flex align-items-center justify-content-xl-start justify-content-center info">
+                            <div class = "m-0 p-0">
+                                <h2 class = "heading heading_margin">
+                                    New Water Grid on Times Square
+                                </h2>
+                                <h4 class = "august">
+                                    AUGUST 2020 | TIMES SQUARE | MICHAEL DUNO
+                                </h4>
+                                <p class = "text">
+                                    Heavy machines started to work on new water grid on Times Square.
+                                </p>
+                                <div class = "d-flex justify-content-xl-start justify-content-center">
+                                    <div>
+                                        <h2 class = "read">
+                                            Read More
+                                        </h2>
+                                        <a href = "#">
+                                            <img class = "img-fluid arrow" src = "Images/News/Arrow_Material.png" alt = "Arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "bottom">
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 mr-0 ml-0 p-0 d-flex justify-content-end right">
+                        <div class = "m-0 p-0">
+
+                            <!-- NY Image, on the Right -->
+                            <div>
+                                <img class = "img-fluid ny" src = "Images/News/NY.png" alt = "NY">
+                            </div>
+
+                            <!-- Navbar -->
+                            <ul class = "mt-0 navbar">
+                                <li class = "navbar_option top">
+                                    <div class = "line top">
+                                    </div>
+                                    <h4 class = "options">
+                                        <a href = "#" class = "option option_home">
+                                            HOME
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li class = "navbar_option">
+                                    <div class = "line">
+                                    </div>
+                                    <h4 class = "options">
+                                        <a href = "#" class = "option option_about">
+                                            ABOUT
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li class = "navbar_option">
+                                    <div class = "line">
+                                    </div>
+                                    <h4 class = "options">
+                                        <a href = "#" class = "option option_government">
+                                            GOVERNMENT
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li class = "navbar_option">
+                                    <div class = "line">
+                                    </div>
+                                    <h4 class = "options">
+                                        <a href = "#" class = "option option_departments">
+                                            DEPARTMENTS
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li class = "navbar_option">
+                                    <div class = "line">
+                                    </div>
+                                    <h4 class = "options">
+                                        <a href = "#" class = "option option_contact">
+                                            CONTACT
+                                        </a>
+                                    </h4>
+                                    <div class = "line">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- CONTACT -->
+            <section class = "contact" id = "contact_anchor">
+                <div class = "row m-0 p-0 content">
+
+                    <!-- Heading and Number -->
+                    <div class = "col-xl-12 m-0 p-0 d-flex justify-content-xl-start justify-content-center heading">
+                        <div class = "mr-0 mb-0 ml-0 p-0 contact_heading">
+                            <h1 class = "number">
+                                05
+                            </h1>
+                            <h1 class = "hea">
+                                Contact
+                            </h1>
+                        </div>
+                    </div>
+
+                    <!-- Make a Call Area -->
+                    <div class = "col-xl-4 col-lg-12 mr-0 mb-0 ml-0 call">
+                        <div class = "call_content">
+                            <div class = "d-flex justify-content-center">
+                                <img class = "img-fluid m-0 p-0" src = "Images/Contact/Phone.png" alt = "Phone">
+                            </div>
+                            <h3 class = "text-center call_us">
+                                Make a Call
+                            </h3>
+                            <h4 class = "text-center number">
+                                +1 212 123 456
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Visit Area -->
+                    <div class = "col-xl-4 mr-0 mb-0 ml-0 visit">
+                        <div class = "visit_content">
+                            <div class = "d-flex justify-content-center">
+                                <img class = "img-fluid m-0 p-0" src = "Images/Contact/Location.png" alt = "Location">
+                            </div>
+                            <h3 class = "text-center visit_us">
+                                Visit Us
+                            </h3>
+                            <h4 class = "text-center number">
+                                Broadway and Murray St.
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Mail Area -->
+                    <div class = "col-xl-4 mr-0 mb-0 ml-0 mail">
+                        <div class = "mail_content">
+                            <div class = "d-flex justify-content-center">
+                                <img class = "img-fluid m-0 p-0" src = "Images/Contact/Mail_Ellipse.png" alt = "Mail">
+                            </div>
+                            <h3 class = "text-center email">
+                                Send Message
+                            </h3>
+                            <h4 class = "text-center address">
+                                nyc@email.com
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class = "col-xl-6 col-lg-12 m-0 p-0 message">
+                        <h2 class = "heading">
+                            Leave a Message
+                        </h2>
+                        <p class = "question">
+                            If you have any question or comment about our work, be free to contact us.
+                        </p>
+                        <div class = "d-flex justify-content-center justify-content-xl-start">
+                            <form>
+                                <input type = "text" placeholder = "Your Name" class = "field">
+                                <input type = "text" placeholder = "Your Email" class = "field_mail">
+                                <textarea name = "message" placeholder = "Message" class = "field_message"></textarea>
+                                <br>
+                                <div class = "d-flex justify-content-center justify-content-xl-start">
+                                    <input type = "submit" value = "Submit" class = "submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 col-md-12 col-sm-12 mr-0 mb-0 mt-0 pt-0 pr-0 pl-0 map">
+                        <div class = "set_map" id = "mapview">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- FOOTER -->
+            <footer class = "fo">
+                <div class = "row m-0 p-0 content">
+                    <div class = "col-xl-6 col-lg-12 m-0 p-0 left">
+
+                        <!-- Logo and Text -->
+                        <div class = "m-0 p-0">
+                            <h2 class = "gov">
+                                <a href = "#home_anchor" class = "m-0 p-0 logo">
+                                    NY.Gov
+                                </a>
+                            </h2>
+                            <div class = "d-flex justify-content-xl-start justify-content-center">
+                                <h5 class = "boroughs">
+                                    New York City is composed of five boroughs. While Manhattan and Staten Island are islands, Brooklyn and Queens are geographically part of Long Island, and the Bronx is attached to the US mainland. The islands are linked by bridges, tunnels and ferries. 
+                                </h5>
+                            </div>  
+                        </div>
+
+                        <!-- Info, Contacts -->
+                        <div class = "d-flex justify-content-xl-start justify-content-center info_area">
+                            <div class = "info_block">
+                                <div class = "info">
+                                    <img class = "img-fluid mt-0 mr-0 mb-0 img" src = "Images/Footer/Phone.png" alt = "Phone">
+                                    <p class = "mt-0 mr-0 mb-0 p-0 info_text">
+                                        +1 212 123 456
+                                    </p>
+                                </div>
+                                <div class = "info">
+                                    <img class = "img-fluid mt-0 mr-0 mb-0 img" src = "Images/Footer/Location.png" alt = "Location">
+                                    <p class = "mt-0 mr-0 mb-0 p-0 info_text">
+                                        Broadway and Murray St.
+                                    </p>
+                                </div>
+                                <div class = "info mail">
+                                    <img class = "img-fluid mt-0 mr-0 mb-0 img nyc_mail" src = "Images/Footer/Mail_Ellipse.png" alt = "Mail">
+                                    <p class = "mt-0 mr-0 mb-0 p-0 info_text">
+                                        nyc@email.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instagram Images -->
+                    <div class = "col-xl-6 col-md-12 col-12 mr-0 ml-0 p-0 row d-flex justify-content-end images">
+                        <div class = "col-xl-12 m-0 p-0 im">
+                            <h3 class = "ny">
+                                NYC (Instagram)
+                            </h3>
+                        </div>
+                        <div class = "col-xl-6 col-md-12 col-12 mt-0 mr-0 mb-0 p-0 d-flex justify-content-center nyc">
+                            <img class = "img-fluid" src = "Images/Footer/Manhattan_Skyline.png" alt = "Manhattan Skyline">
+                        </div>
+                        <div class = "col-xl-6 col-md-12 col-12 mt-0 mr-0 mb-0 p-0 d-flex justify-content-center nyc">
+                            <img class = "img-fluid" src = "Images/Footer/Manhattan.png" alt = "Manhattan">
+                        </div>
+                        <div class = "col-xl-6 col-md-12 col-12 mt-0 mr-0 mb-0 p-0 d-flex justify-content-center nyc">
+                            <img class = "img-fluid" src = "Images/Footer/Traffic.png" alt = "Traffic">
+                        </div>
+                        <div class = "col-xl-6 col-md-12 col-12 col-lg-12 mt-0 mr-0 mb-0 p-0 d-flex justify-content-center nyc">
+                            <img class = "img-fluid" src = "Images/Footer/Works.png" alt = "Works">
+                        </div>
+                    </div>
+
+                    <!-- Bottom -->
+                    <div class = "col-xl-12 m-0 p-0 row bottom">
+                        <div class = "col-xl-6 col-md-12 col-12 m-0 p-0">
+                            <p class = "mt-0 mr-0 mb-0 pl-0 pr-0 copyright">
+                                JoX - Themes©, 2020 
+                            </p>
+                        </div>
+                        <div class = "col-xl-6 col-lg-12 m-0 p-0 d-flex justify-content-xl-end justify-content-center">
+                            <div class = "mt-0 ml-0 mb-0 pl-0 pr-0 options">
+                                <a href = "HTML/terms.html" class = "option">
+                                    Terms 
+                                </a>
+                                <p class = "line">
+                                    |
+                                </p>
+                                <a href = "HTML/privacy.html" class = "option">
+                                    Privacy 
+                                </a>
+                                <p class = "line">
+                                    |
+                                </p>
+                                <a href = "#" class = "option">
+                                    Forums 
+                                </a>
+                            </div>
+                            <a href = "#" class = "top_home">
+                                <img class = "img-fluid up" src = "Images/Footer/Up.png" alt = "Up">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+
+
+        <!-- JavaScript Connections -->
+        <script src = 'JS/jquery-3.4.1.min.js'>
+        </script>
+        <script src = 'JS/popper.min.js'>
+        </script>
+        <script src = 'JS/bootstrap.js'>
+        </script>
+        <script src = 'JS/bootstrap.min.js'>
+        </script>
+        <script src = 'JS/bootstrap.bundle.js'>
+        </script>
+        <script src = 'JS/bootstrap.bundle.min.js'>
+        </script>
+        <script src = "https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin="">
+        </script>
+        <script src = "JS/loading.js">
+        </script>
+        <script src = "JS/search.js">
+        </script>
+        <script src = "JS/map.js">
+        </script>
+        <script src = "JS/scroll.js">
+        </script>
+        <script src = "JS/menu.js">
+        </script>
+
+
+    </body>
+
+
+</html>

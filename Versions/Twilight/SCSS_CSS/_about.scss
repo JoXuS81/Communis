@@ -1,0 +1,1488 @@
+/*
+
+
+*****************
+TABLE OF CONTENTS 
+*****************
+
+1. About 
+ 1.1 Content 
+  1.1.1 Heading 
+  1.1.2 Careers 
+  1.1.3 Events 
+  1.1.4 Residents 
+  1.1.5 Text on the Right
+  1.1.6 Services 
+ 1.2 Headings 
+2. Media Queries
+
+*/
+
+
+/* ABOUT */
+.about {
+    @include hide;
+    background:$middledark;
+    margin:0;
+    padding:0;
+    width:90%;
+
+    /* Content */
+    .content {
+
+        /* Heading */
+        .ab {
+            margin-top:103px;
+            .hea {
+                display:inline;
+                font-family:antic;
+                font-size:96px;
+                letter-spacing:2.5px;
+                position:relative;
+                right:25px;
+                top:25px;
+                z-index:2;
+            }
+            .number {
+                color:$brightorange;
+                display:inline;
+                font-family:titillium_web;
+                font-size:200px;
+                font-weight:bold;
+                margin-left:532px;
+                padding:0;
+                position:relative;
+                z-index:2;
+            }
+        }
+
+        /* Careers */
+        .careers {
+            .info {
+                background:$greenlight;
+                bottom:48px;
+                position:relative;
+                .link {
+                    &:hover {
+                        text-decoration:none;
+                    }
+                    .info_block {
+                        padding:31px 0 31px 0;
+                        width:300px;
+                        .careers_text {
+                            color:$light;
+                            font-family:nunito_sans;
+                            font-weight:bold;
+                            margin-top:30px;
+                        }
+                        .positions {
+                            color:$light;
+                            font-family:nunito_sans;
+                            font-size:18px;
+                            font-weight:bold;
+                            margin-top:30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Events */
+        .events {
+            .info {
+                background:$greenlight;
+                bottom:48px;
+                position:relative;
+                .link {
+                    &:hover {
+                        text-decoration:none;
+                    }
+                    .info_block {
+                        padding:31px 0 31px 0;
+                        width:300px;
+                        .apple {
+                            color:$light;
+                            font-family:nunito_sans;
+                            font-size:18px;
+                            font-weight:bold;
+                            margin-top:30px;
+                        }
+                        .events_text {
+                            color:$light;
+                            font-family:nunito_sans;
+                            font-weight:bold;
+                            margin-top:30px;
+                        }
+                    }
+                }
+            }
+        }
+        .img {
+            bottom:300px;
+            position:relative;
+            .ny {
+                .life {
+                    bottom:-203px;
+                    left:180px;
+                    position:absolute;
+                    right:100px;
+                    width:50%;
+                    .big_apple {
+                        color:$light;
+                        font-family:titillium_web;
+                        letter-spacing:2.5px;
+                    }
+                    .lifestyle {
+                        color:$light;
+                        font-family:titillium_web;
+                        margin-top:15px;
+                        text-align:center;
+                    }
+                }
+                .nyc {
+                    bottom:-3px;
+                    left:-180px;
+                    position:absolute;
+                    transform:rotate(-90deg);
+                    .ny_text {
+                        font-weight:bold;
+                        letter-spacing:2.5px;
+                    }
+                }
+                .ny_img {
+                    margin-bottom:-253px;
+                }
+            }
+        }
+
+        /* Residents */
+        .residents {
+            .info {
+                background:$greenlight;
+                bottom:48px;
+                position:relative;
+                .link {
+                    &:hover {
+                        text-decoration:none;
+                    }
+                    .info_block {
+                        padding:31px 0 31px 0;
+                        width:300px;
+                        .help {
+                            color:$light;
+                            font-family:nunito_sans;
+                            font-size:18px;
+                            font-weight:bold;
+                            margin-top:30px;
+                        }
+                        .residents_text {
+                            color:$light;
+                            font-family:nunito_sans;
+                            font-weight:bold;
+                            margin-top:30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Text on the Right */
+        .right {
+            background:$darkopacity;
+            margin-bottom:47px;
+            margin-top:47px;
+            .boroughs {
+                .text {
+                    color:$light;
+                    font-family:antic;
+                    font-size:35px;
+                    width:90%;
+                }
+            }
+        }
+
+        /* Services */
+        .services {
+            .info {
+                background:$greenlight;
+                bottom:48px;
+                position:relative;
+                .link {
+                    &:hover {
+                        text-decoration:none;
+                    }
+                    .info_block {
+                        padding:31px 0 31px 0;
+                        width:300px;
+                        .serv {
+                            color:$light;
+                            font-family:nunito_sans;
+                            font-size:18px;
+                            font-weight:bold;
+                            margin-top:30px;
+                        }
+                        .services_text {
+                            color:$light;
+                            font-family:nunito_sans;
+                            font-weight:bold;
+                            margin-top:30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Headings */
+    h1 {
+        @include h1;
+        padding:0;
+    }
+    h2 {
+        @include h2;
+        margin:0;
+        padding:0;
+    }
+    h4 {
+        @include h4;
+        margin:0;
+        padding:0;
+    }
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width:500px) {
+    .about {
+        .nyc {
+            display:none;
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    .about {
+        .content {
+            .heading {
+                .ab {
+                    display:none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    .about {
+        .content {
+            .ab {
+                .number {
+                    margin-left:0;
+                }
+            }
+            .careers {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:275px;
+                        }
+                    }
+                }
+            }
+            .events {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:275px;
+                        }
+                    }
+                }
+            }
+            .img {
+                bottom:0;
+                display:flex;
+                justify-content:center;
+                margin-top:103px;
+                .ny {
+                    margin-left:0;
+                    .img_hold {
+                        display:flex;
+                        justify-content:center;
+                        .ny_img {
+                            height:auto;
+                            margin-bottom:-253px;
+                            width:75%;
+                        }
+                    }
+                    .life {
+                        display:none;
+                    }
+                    .nyc {
+                        bottom:-3px;
+                        left:-100px;
+                        position:absolute;
+                        transform:rotate(-90deg);
+                        .ny_text {
+                            font-weight:bold;
+                            letter-spacing:2.5px;
+                        }
+                    }
+                }
+            }
+            .residents {
+                .info {
+                    .link {
+                        .info_block {
+                            width:275px;
+                        }
+                    }
+                }
+            }
+            .right {
+                margin-bottom:47px;
+                margin-top:325px;
+                padding:0;
+            }
+            .services {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:275px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:577px) and (max-width:768px) {
+    .about {
+        .content {
+            .heading {
+                .ab {
+                    display:none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:577px) and (max-width:768px) {
+    .about {
+        .content {
+            .ab {
+                .number {
+                    margin-left:0;
+                }
+            }
+            .careers {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:500px;
+                        }
+                    }
+                }
+            }
+            .events {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:500px;
+                        }
+                    }
+                }
+            }
+            .img {
+                bottom:0;
+                display:flex;
+                justify-content:center;
+                margin-top:103px;
+                .ny {
+                    margin-left:0;
+                    .img_hold {
+                        display:flex;
+                        justify-content:center;
+                        .ny_img {
+                            height:auto;
+                            margin-bottom:-253px;
+                            width:75%;
+                        }
+                    }
+                    .life {
+                        left:200px;
+                        width:50%;
+                    }
+                    .nyc {
+                        bottom:-3px;
+                        left:-100px;
+                        position:absolute;
+                        transform:rotate(-90deg);
+                        .ny_text {
+                            font-weight:bold;
+                            letter-spacing:2.5px;
+                        }
+                    }
+                }
+            }
+            .residents {
+                .info {
+                    .link {
+                        .info_block {
+                            width:500px;
+                        }
+                    }
+                }
+            }
+            .right {
+                margin-bottom:47px;
+                margin-top:325px;
+                padding:0;
+            }
+            .services {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:769px) and (max-width:800px) {
+    .about {
+        .content {
+            .heading {
+                .ab {
+                    display:none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:769px) and (max-width:992px) {
+    .about {
+        .content {
+            .ab {
+                .hea {
+                    font-size:77px;
+                    right:0;
+                }
+                .number {
+                    font-size:162px;
+                    margin-left:0;
+                }
+            }
+            .careers {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:675px;
+                        }
+                    }
+                }
+            }
+            .events {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:675px;
+                        }
+                    }
+                }
+            }
+            .img {
+                bottom:0;
+                display:flex;
+                justify-content:center;
+                margin-top:103px;
+                .ny {
+                    margin-left:0;
+                    .life {
+                        width:62%;
+                    }
+                    .nyc {
+                        bottom:-3px;
+                        left:-180px;
+                        position:absolute;
+                        transform:rotate(-90deg);
+                        .ny_text {
+                            font-weight:bold;
+                            letter-spacing:2.5px;
+                        }
+                    }
+                    .ny_img {
+                        margin-bottom:-253px;
+                    }
+                }
+            }
+            .residents {
+                .info {
+                    .link {
+                        .info_block {
+                            width:675px;
+                        }
+                    }
+                }
+            }
+            .right {
+                margin-bottom:47px;
+                margin-top:325px;
+                padding:0;
+            }
+            .services {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:675px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:993px) and (max-width:1199px) {
+    .about {
+        .content {
+            .ab {
+                .hea {
+                    right:0;
+                }
+                .number {
+                    margin-left:0;
+                }
+            }
+            .careers {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:875px;
+                        }
+                    }
+                }
+            }
+            .events {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:875px;
+                        }
+                    }
+                }
+            }
+            .img {
+                bottom:0;
+                display:flex;
+                justify-content:center;
+                margin-top:103px;
+                .ny {
+                    margin-left:0;
+                    .life {
+                        width:62%;
+                    }
+                    .nyc {
+                        bottom:-3px;
+                        left:-180px;
+                        position:absolute;
+                        transform:rotate(-90deg);
+                        .ny_text {
+                            font-weight:bold;
+                            letter-spacing:2.5px;
+                        }
+                    }
+                    .ny_img {
+                        margin-bottom:-253px;
+                    }
+                }
+            }
+            .residents {
+                .info {
+                    .link {
+                        .info_block {
+                            width:875px;
+                        }
+                    }
+                }
+            }
+            .right {
+                margin-bottom:47px;
+                margin-top:325px;
+                padding:0;
+            }
+            .services {
+                margin-top:25px;
+                .info {
+                    .link {
+                        .info_block {
+                            width:875px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1199px) {
+    .about {
+        .content {
+            .img {
+                .ny {
+                    margin-left:49px;
+                    position:relative;
+                }
+            }
+            .right {
+                background:$middledark;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1224px) {
+    .about {
+        .content {
+            .careers {
+                .info {
+                    .link {
+                        .info_block {
+                            width:250px;
+                        }
+                    }
+                }
+            }
+            .events {
+                .info {
+                    .link {
+                        .info_block {
+                            width:250px;
+                        }
+                    }
+                }
+            }
+            .residents {
+                .info {
+                    .link {
+                        .info_block {
+                            width:250px;
+                        }
+                    }
+                }
+            }
+            .right {
+                .boroughs {
+                    .text {
+                        font-size:32px;
+                    }
+                }
+            }
+            .services {
+                .info {
+                    .link {
+                        .info_block {
+                            width:250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1335px) {
+    .about {
+        .content {
+            .right {
+                background:$middledark;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1350px) {
+    .about {
+        .heading {
+            .ab {
+                .number {
+                    margin-left:375px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1500px) {
+    .about {
+        .heading {
+            .ab {
+                .hea {
+                    font-size:77px;
+                }
+                .number {
+                    font-size:162px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1225px) and (max-width:1350px) {
+    .about {
+        .content {
+            .careers {
+                .info {
+                    .link {
+                        .info_block {
+                            width:250px;
+                        }
+                    }
+                }
+            }
+            .events {
+                .info {
+                    .link {
+                        .info_block {
+                            width:250px;
+                        }
+                    }
+                }
+            }
+            .residents {
+                .info {
+                    .link {
+                        .info_block {
+                            width:250px;
+                        }
+                    }
+                }
+            }
+            .right {
+                .boroughs {
+                    .text {
+                        font-size:32px;
+                    }
+                }
+            }
+            .services {
+                .info {
+                    .link {
+                        .info_block {
+                            width:250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1225px) and (max-width:1250px) {
+    .about {
+        .content {
+            .right {
+                .boroughs {
+                    .text {
+                        font-size:32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1251px) and (max-width:1275px) {
+    .about {
+        .content {
+            .right {
+                .boroughs {
+                    .text {
+                        font-size:32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1276px) and (max-width:1300px) {
+    .about {
+        .content {
+            .right {
+                .boroughs {
+                    .text {
+                        font-size:32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .about {
+        .content {
+            .ab {
+                margin-top:128px;
+                .hea {
+                    font-size:105px;
+                    letter-spacing:3.1px;
+                    right:31px;
+                    top:31px;
+                }
+                .number {
+                    font-size:250px;
+                    margin-left:479px;
+                }
+            }
+            .careers {
+                .info {
+                    bottom:60px;
+                    .link {
+                        .info_block {
+                            padding:38px 0 38px 0;
+                            width:350px;
+                            .careers_icon {
+                                height:87px;
+                                width:100px;
+                            }
+                            .careers_text {
+                                margin-top:37px;
+                            }
+                            .positions {
+                                font-size:22px;
+                                margin-top:37px;
+                            }
+                        }
+                    }
+                }
+            }
+            .events {
+                .info {
+                    bottom:60px;
+                    .link {
+                        .info_block {
+                            padding:38px 0 38px 0;
+                            width:350px;
+                            .apple {
+                                font-size:22px;
+                                margin-top:37px;
+                            }
+                            .events_icon {
+                                height:87px;
+                                width:80px;
+                            }
+                            .events_text {
+                                margin-top:37px;
+                            }
+                        }
+                    }
+                }
+            }
+            .img {
+                bottom:375px;
+                .ny {
+                    margin-left:61px;
+                    .life {
+                        bottom:-253px;
+                        left:225px;
+                        right:125px;
+                        .big_apple {
+                            letter-spacing:3.1px;
+                        }
+                        .lifestyle {
+                            font-size:20px;
+                            margin-top:18px;
+                        }
+                    }
+                    .nyc {
+                        bottom:-3.7px;
+                        left:-225px;
+                        .ny_text {
+                            letter-spacing:3.1px;
+                        }
+                    }
+                    .ny_img {
+                        height:1125px;
+                        margin-bottom:-316px;
+                        width:750px;
+                    }
+                }
+            }
+            .residents {
+                .info {
+                    bottom:60px;
+                    .link {
+                        .info_block {
+                            padding:38px 0 38px 0;
+                            width:350px;
+                            .help {
+                                font-size:22px;
+                                margin-top:37px;
+                            }
+                            .residents_icon {
+                                height:87px;
+                                width:125px;
+                            }
+                            .residents_text {
+                                margin-top:37px;
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                margin-bottom:58px;
+                margin-top:58px;
+                .boroughs {
+                    .text {
+                        font-size:43px;
+                    }
+                }
+            }
+            .services {
+                .info {
+                    bottom:60px;
+                    .link {
+                        .info_block {
+                            padding:38px 0 38px 0;
+                            width:350px;
+                            .serv {
+                                font-size:22px;
+                                margin-top:37px;
+                            }
+                            .services_icon {
+                                height:87px;
+                                width:87px;
+                            }
+                            .services_text {
+                                margin-top:37px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h1 {
+            @include h1_2000;
+        }
+        h2 {
+            @include h2_2000;
+        }
+        h4 {
+            @include h4_2000;
+        }
+    }
+}
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .about {
+        .content {
+            .ab {
+                margin-top:160px;
+                .hea {
+                    font-size:131px;
+                    letter-spacing:3.8px;
+                    right:38px;
+                    top:38px;
+                }
+                .number {
+                    font-size:312px;
+                    margin-left:599px;
+                }
+            }
+            .careers {
+                .info {
+                    bottom:75px;
+                    .link {
+                        .info_block {
+                            padding:47px 0 47px 0;
+                            width:443px;
+                            .careers_icon {
+                                height:108px;
+                                width:125px;
+                            }
+                            .careers_text {
+                                margin-top:46px;
+                            }
+                            .positions {
+                                font-size:27px;
+                                margin-top:46px;
+                            }
+                        }
+                    }
+                }
+            }
+            .events {
+                .info {
+                    bottom:75px;
+                    .link {
+                        .info_block {
+                            padding:47px 0 47px 0;
+                            width:443px;
+                            .apple {
+                                font-size:27px;
+                                margin-top:46px;
+                            }
+                            .events_icon {
+                                height:108px;
+                                width:100px;
+                            }
+                            .events_text {
+                                margin-top:46px;
+                            }
+                        }
+                    }
+                }
+            }
+            .img {
+                bottom:468px;
+                .ny {
+                    margin-left:76px;
+                    .life {
+                        bottom:-316px;
+                        left:281px;
+                        right:156px;
+                        .big_apple {
+                            letter-spacing:3.8px;
+                        }
+                        .lifestyle {
+                            font-size:25px;
+                            margin-top:22px;
+                        }
+                    }
+                    .nyc {
+                        bottom:-4.6px;
+                        left:-281px;
+                        .ny_text {
+                            letter-spacing:3.8px;
+                        }
+                    }
+                    .ny_img {
+                        height:1406px;
+                        margin-bottom:-395px;
+                        width:937px;
+                    }
+                }
+            }
+            .residents {
+                .info {
+                    bottom:75px;
+                    .link {
+                        .info_block {
+                            padding:47px 0 47px 0;
+                            width:443px;
+                            .help {
+                                font-size:27px;
+                                margin-top:46px;
+                            }
+                            .residents_icon {
+                                height:108px;
+                                width:156px;
+                            }
+                            .residents_text {
+                                margin-top:46px;
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                margin-bottom:72px;
+                margin-top:72px;
+                .boroughs {
+                    .text {
+                        font-size:53px;
+                    }
+                }
+            }
+            .services {
+                .info {
+                    bottom:75px;
+                    .link {
+                        .info_block {
+                            padding:47px 0 47px 0;
+                            width:443px;
+                            .serv {
+                                font-size:27px;
+                                margin-top:46px;
+                            }
+                            .services_icon {
+                                height:108px;
+                                width:108px;
+                            }
+                            .services_text {
+                                margin-top:46px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h1 {
+            @include h1_2500;
+        }
+        h2 {
+            @include h2_2500;
+        }
+        h4 {
+            @include h4_2500;
+        }
+    }
+}
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .about {
+        .content {
+            .ab {
+                margin-top:200px;
+                .hea {
+                    font-size:163px;
+                    letter-spacing:4.7px;
+                    right:47px;
+                    top:47px;
+                }
+                .number {
+                    font-size:390px;
+                    margin-left:749px;
+                }
+            }
+            .careers {
+                .info {
+                    bottom:93px;
+                    .link {
+                        .info_block {
+                            padding:58px 0 58px 0;
+                            width:560px;
+                            .careers_icon {
+                                height:135px;
+                                width:156px;
+                            }
+                            .careers_text {
+                                margin-top:57px;
+                            }
+                            .positions {
+                                font-size:33px;
+                                margin-top:57px;
+                            }
+                        }
+                    }
+                }
+            }
+            .events {
+                .info {
+                    bottom:93px;
+                    .link {
+                        .info_block {
+                            padding:58px 0 58px 0;
+                            width:560px;
+                            .apple {
+                                font-size:33px;
+                                margin-top:57px;
+                            }
+                            .events_icon {
+                                height:135px;
+                                width:125px;
+                            }
+                            .events_text {
+                                margin-top:57px;
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                .boroughs {
+                    .text {
+                        font-size:66px;
+                    }
+                }
+            }
+            .img {
+                bottom:585px;
+                .ny {
+                    margin-left:95px;
+                    .life {
+                        bottom:-395px;
+                        left:351px;
+                        right:195px;
+                        .big_apple {
+                            letter-spacing:4.7px;
+                        }
+                        .lifestyle {
+                            font-size:31px;
+                            margin-top:27px;
+                        }
+                    }
+                    .nyc {
+                        bottom:-5.7px;
+                        left:-351px;
+                        .ny_text {
+                            letter-spacing:4.7px;
+                        }
+                    }
+                    .ny_img {
+                        height:1757px;
+                        margin-bottom:-494px;
+                        width:1171px;
+                    }
+                }
+            }
+            .residents {
+                .info {
+                    bottom:93px;
+                    .link {
+                        .info_block {
+                            padding:58px 0 58px 0;
+                            width:560px;
+                            .help {
+                                font-size:33px;
+                                margin-top:57px;
+                            }
+                            .residents_icon {
+                                height:135px;
+                                width:195px;
+                            }
+                            .residents_text {
+                                margin-top:57px;
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                margin-bottom:90px;
+                margin-top:90px;
+                .boroughs {
+                    .text {
+                        font-size:66px;
+                    }
+                }
+            }
+            .services {
+                .info {
+                    bottom:93px;
+                    .link {
+                        .info_block {
+                            padding:58px 0 58px 0;
+                            width:560px;
+                            .serv {
+                                font-size:33px;
+                                margin-top:57px;
+                            }
+                            .services_icon {
+                                height:135px;
+                                width:135px;
+                            }
+                            .services_text {
+                                margin-top:57px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h1 {
+            @include h1_3125;
+        }
+        h2 {
+            @include h2_3125;
+        }
+        h4 {
+            @include h4_3125;
+        }
+    }
+}
+
+
+@media (min-width:3126px) {
+    .about {
+        .content {
+            .ab {
+                margin-top:250px;
+                .hea {
+                    font-size:204px;
+                    letter-spacing:5.8px;
+                    right:58px;
+                    top:58px;
+                }
+                .number {
+                    font-size:488px;
+                    margin-left:936px;
+                }
+            }
+            .careers {
+                .info {
+                    bottom:116px;
+                    .link {
+                        .info_block {
+                            padding:72px 0 72px 0;
+                            width:706px;
+                            .careers_icon {
+                                height:168px;
+                                width:195px;
+                            }
+                            .careers_text {
+                                margin-top:71px;
+                            }
+                            .positions {
+                                font-size:41px;
+                                margin-top:71px;
+                            }
+                        }
+                    }
+                }
+            }
+            .events {
+                .info {
+                    bottom:116px;
+                    .link {
+                        .info_block {
+                            padding:72px 0 72px 0;
+                            width:706px;
+                            .apple {
+                                font-size:41px;
+                                margin-top:71px;
+                            }
+                            .events_icon {
+                                height:168px;
+                                width:156px;
+                            }
+                            .events_text {
+                                margin-top:71px;
+                            }
+                        }
+                    }
+                }
+            }
+            .img {
+                bottom:731px;
+                .ny {
+                    margin-left:118px;
+                    .life {
+                        bottom:-494px;
+                        left:439px;
+                        right:243px;
+                        .big_apple {
+                            letter-spacing:5.8px;
+                        }
+                        .lifestyle {
+                            font-size:38px;
+                            margin-top:33px;
+                        }
+                    }
+                    .nyc {
+                        bottom:-7.1px;
+                        left:-439px;
+                        .ny_text {
+                            letter-spacing:5.8px;
+                        }
+                    }
+                    .ny_img {
+                        height:2196px;
+                        margin-bottom:-618px;
+                        width:1464px;
+                    }
+                }
+            }
+            .residents {
+                .info {
+                    bottom:116px;
+                    .link {
+                        .info_block {
+                            padding:72px 0 72px 0;
+                            width:706px;
+                            .help {
+                                font-size:41px;
+                                margin-top:71px;
+                            }
+                            .residents_icon {
+                                height:168px;
+                                width:243px;
+                            }
+                            .residents_text {
+                                margin-top:71px;
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                margin-bottom:112px;
+                margin-top:112px;
+                .boroughs {
+                    .text {
+                        font-size:82px;
+                    }
+                }
+            }
+            .services {
+                .info {
+                    bottom:116px;
+                    .link {
+                        .info_block {
+                            padding:72px 0 72px 0;
+                            width:706px;
+                            .serv {
+                                font-size:41px;
+                                margin-top:71px;
+                            }
+                            .services_icon {
+                                height:168px;
+                                width:168px;
+                            }
+                            .services_text {
+                                margin-top:71px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h1 {
+            @include h1_3850;
+        }
+        h2 {
+            @include h2_3850;
+        }
+        h4 {
+            @include h4_3850;
+        }
+    }
+}
